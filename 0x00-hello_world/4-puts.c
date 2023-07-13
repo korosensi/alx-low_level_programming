@@ -1,8 +1,7 @@
 #include <stdio.h>
 /**
   *main - void
-  *puts - print a string
-  *return:  - return nothing0
+  *return: return nothing0
 */
 int main(void)
 {

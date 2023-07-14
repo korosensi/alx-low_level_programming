@@ -9,26 +9,26 @@
  */
 int main(void)
 {
-    int n;  /* Declare the variable n */
+int n;  /* Declare the variable n */
 
-    srand(time(0));  /* Initialize random number generator */
+srand(time(0));  /* Initialize random number generator */
 
-    n = rand() - RAND_MAX / 2;  /* Generate a random number */
+n = rand() - RAND_MAX / 2;  /* Generate a random number */
 
-    printf("%d is ", n);
+printf("%d is ", n);
 
-    if (n > 0)
-    {
-        printf("positive\n");
-    }
+if (n > 0)
+{
+    printf("positive\n");
+}
     else if (n < 0)
-    {
-        printf("negative\n");
-    }
-    else
-    {
-        printf("zero\n");
-    }
+{
+    printf("negative\n");
+}
+else
+{
+    printf("zero\n");
+}
 
-    return 0;
+return 0;
 }

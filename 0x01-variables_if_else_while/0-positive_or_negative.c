@@ -3,32 +3,32 @@
 #include <time.h>
 
 /**
- * main - Entry point of the program
+ * main - Determines if a number is positive, negative, or zero.
  *
- * Return: 0 on success
+ * Return: Always 0 (Success)
  */
 int main(void)
 {
-    int n;  /* Declare the variable n */
+	int n;  /* Declare the variable n */
 
-    srand(time(0));  /* Initialize random number generator */
+	srand(time(0));  /* Initialize random number generator */
 
-    n = rand() % 201 - 100;  /* Generate a random number between -100 and 100 */
+	n = rand() - RAND_MAX / 2;  /* Generate a random number */
 
-    printf("The number %d is ", n);
+	printf("%d is", n);
 
-    if (n > 0)
-    {
-        printf("positive\n");
-    }
-    else if (n == 0)
-    {
-        printf("zero\n");
-    }
-    else
-    {
-        printf("negative\n");
-    }
+	if (n > 0)
+	{
+		printf(" positive\n");
+	}
+	else if (n < 0)
+	{
+		printf(" negative\n");
+	}
+	else
+	{
+		printf(" zero\n");
+	}
 
-    return 0;
+	return (0);
 }

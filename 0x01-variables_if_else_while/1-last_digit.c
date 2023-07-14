@@ -10,28 +10,28 @@
  */
 int main(void)
 {
-	int n;
-	int last_digit;
+    int n;
+    int last_digit;
 
-	srand(time(0));  /* Initialize random number generator */
+    srand(time(0));  /* Initialize random number generator */
 
-	n = rand();  /* Generate a random number */
-	last_digit = n % 10;  /* Extract the last digit of the number */
+    n = rand();  /* Generate a random number */
+    last_digit = n % 10;  /* Extract the last digit of the number */
 
-	printf("Last digit of %d is %d and is", n, last_digit);
+    printf("Last digit of %d is %d and is ", n, last_digit);
 
-	if (last_digit > 5)
-	{
-		printf(" greater than 5\n");
-	}
-	else if (last_digit == 0)
-	{
-		printf(" 0\n");
-	}
-	else
-	{
-		printf(" less than 6 and not 0\n");
-	}
+    if (last_digit > 5)
+    {
+        printf("greater than 5\n");
+    }
+    else if (last_digit == 0)
+    {
+        printf("0\n");
+    }
+    else
+    {
+        printf("less than 6\n");
+    }
 
-	return (0);
+    return 0;
 }

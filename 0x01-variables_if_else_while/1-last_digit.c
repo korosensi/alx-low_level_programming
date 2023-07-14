@@ -3,32 +3,35 @@
 #include <time.h>
 
 /**
- * main - Entry point of the program
+ * main - Determines the last digit of a randomly generated number
+ * and whether it is greater than 5, less than 6, or 0.
  *
- * Return: 0 on success
+ * Return: Always 0.
  */
 int main(void)
 {
-    int n;
+	int n;
+	int last_digit;
 
-    srand(time(0));  /* Initialize random number generator */
+	srand(time(0));  /* Initialize random number generator */
 
-    n = rand();
+	n = rand();  /* Generate a random number */
+	last_digit = n % 10;  /* Extract the last digit of the number */
 
-    printf("Last digit of %d is %d and is", n, n % 10);
+	printf("Last digit of %d is %d and is", n, last_digit);
 
-    if (n % 10 > 5)
-    {
-        printf(" greater than 5\n");
-    }
-    else if (n % 10 == 0)
-    {
-        printf(" 0\n");
-    }
-    else
-    {
-        printf(" less than 6 and not 0\n");
-    }
+	if (last_digit > 5)
+	{
+		printf(" greater than 5\n");
+	}
+	else if (last_digit == 0)
+	{
+		printf(" 0\n");
+	}
+	else
+	{
+		printf(" less than 6 and not 0\n");
+	}
 
-    return 0;
+	return (0);
 }

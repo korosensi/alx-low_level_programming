@@ -9,9 +9,11 @@
  */
 int main(void)
 {
+    int n;  /* Declare the variable n */
+
     srand(time(0));  /* Initialize random number generator */
 
-    int n = rand() - RAND_MAX / 2;
+    n = rand() - RAND_MAX / 2;  /* Generate a random number */
 
     printf("%d is ", n);
 
@@ -29,5 +31,4 @@ int main(void)
     }
 
     return 0;
-}
 }

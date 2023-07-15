@@ -10,11 +10,10 @@
  */
 int main(void)
 {
-    srand(time(0));  // Initialize random number generator
+    srand(time(0));
+    int n = (rand() % 2 == 0) ? 98 : -98;
 
-    int n = (rand() % 2 == 0) ? 98 : -98;  // Assign specific values of 98 and -98
-
-    int last_digit = abs(n) % 10;  // Extract the last digit (absolute value)
+    int last_digit = abs(n) % 10;
 
     printf("Last digit of %d is %d and is ", n, last_digit);
 

@@ -2,24 +2,24 @@
 #include <stdlib.h>
 #include <stdio.h>
 
-/*
- * op_add - ...
- * @a: ...
- * @b: ...
+/**
+ * op_add - args 
+ * @a: is an int
+ * @b: int
  *
- * Return: ...
+ * Return: a+b	
  */
 int op_add(int a, int b)
 {
 	return (a + b);
 }
 
-/*
- * op_sub - ...
- * @a: ...
- * @b: ...
+/**
+ * op_sub - args 
+ * @a: int
+ * @b: int
  *
- * Return: ...
+ * Return: a - b
  */
 int op_sub(int a, int b)
 {
@@ -27,11 +27,11 @@ int op_sub(int a, int b)
 }
 
 /*
- * op_mul - ...
- * @a: ...
- * @b: ...
+ * op_mul - args
+ * @a: int
+ * @b: int
  *
- *  Return: ...
+ *  Return: a * b
  */
 int op_mul(int a, int b)
 {
